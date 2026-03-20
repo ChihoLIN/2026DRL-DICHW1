@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1: 網格地圖開發與策略評估</title>
+    <!-- Font Awesome for arrows -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>強化學習網格地圖 (Grid Map)</h1>
+            <p class="subtitle">HW1: 策略評估 (Policy Evaluation) 與 價值迭代 (Value Iteration)</p>
+        </header>
+
+        <div class="controls-card">
+            <div class="input-group">
+                <label for="grid-size">網格尺寸 (n x n):</label>
+                <input type="number" id="grid-size" min="5" max="9" value="5">
+                <button id="generate-btn" class="btn primary">生成網格 (HW1-1)</button>
+            </div>
+            
+            <div id="status-message" class="status-message">
+                請輸入 5 到 9 之間的數字並點擊「生成網格」。
+            </div>
+
+            <div class="action-buttons hidden" id="action-buttons">
+                <button id="random-policy-btn" class="btn secondary">
+                    <i class="fas fa-random"></i> HW1-2: 隨機策略與價值評估
+                </button>
+                <button id="value-iteration-btn" class="btn success">
+                    <i class="fas fa-magic"></i> HW1-3: 價值迭代 (最佳策略)
+                </button>
+                <button id="reset-btn" class="btn danger">
+                    <i class="fas fa-redo"></i> 重置網格
+                </button>
+            </div>
+        </div>
+
+        <div class="grid-container hidden" id="grid-wrapper">
+            <div id="grid" class="grid-board"></div>
+        </div>
+        
+        <div class="legend hidden" id="legend">
+            <div class="legend-item"><div class="cell start legend-cell"></div> <span>起點 (Start)</span></div>
+            <div class="legend-item"><div class="cell end legend-cell"></div> <span>終點 (End)</span></div>
+            <div class="legend-item"><div class="cell obstacle legend-cell"></div> <span>障礙物: <span id="obs-count-legend">0</span></span></div>
+        </div>
+    </div>
+
+    <!-- JavaScript 腳本 -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
