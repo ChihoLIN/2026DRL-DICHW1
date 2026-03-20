@@ -6,7 +6,7 @@
 
 > **Repository 網址:** [https://github.com/ChihoLIN/2026DRL-DICHW1](https://github.com/ChihoLIN/2026DRL-DICHW1)
 > 
-> **Demo 網址:** 此專案透過 Flask 伺服器運行，請下載專案後在終端機執行 `python app.py`，開啟 `http://localhost:8000/` 即可進行動態互動。
+> **Demo 網址:** [https://github.com/ChihoLIN/2026DRL-DICHW1](https://github.com/ChihoLIN/2026DRL-DICHW1) (備註：因本專案為 Flask 後端應用，請參考下方步驟使用 `python app.py` 於本機端啟動 Demo)
 
 ---
 
