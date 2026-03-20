@@ -4,7 +4,9 @@
 
 ## 🌐 Demo 網址
 
-> **[在此貼上您的 Demo 網址]** （如果您尚未部署，可使用本機測試網址： `http://localhost:8000/`）
+> **Repository 網址:** [https://github.com/ChihoLIN/2026DRL-DICHW1](https://github.com/ChihoLIN/2026DRL-DICHW1)
+> 
+> **Demo 網址:** 此專案透過 Flask 伺服器運行，請下載專案後在終端機執行 `python app.py`，開啟 `http://localhost:8000/` 即可進行動態互動。
 
 ---
 
